@@ -14,7 +14,7 @@ app.use('/Coffee', pedidoRoutes);
 // app.use('/Coffee/menu', menuRoutes);
 
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.MYSQLPORT || 3000;
 app.listen(PORT, () => {
     console.info(`Servidor corriendo en el puerto ${PORT}`);    
 });
