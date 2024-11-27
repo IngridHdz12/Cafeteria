@@ -1,13 +1,13 @@
-const API_PEDIDOS_URL = 'https://cafeteria-s0ks.onrender.com:3000/Coffee/pedido/';
-const API_MENU_URL = 'https://cafeteria-s0ks.onrender.com:3000/Coffee/menu/';
-const API_PRODUCTO_URL = 'https://cafeteria-s0ks.onrender.com:3000/Coffee/producto/';
+const API_PEDIDOS_URL = 'https://cafeteria-s0ks.onrender.com/Coffee/pedido/';
+const API_MENU_URL = 'https://cafeteria-s0ks.onrender.com/Coffee/menu/';
+const API_PRODUCTO_URL = 'https://cafeteria-s0ks.onrender.com/Coffee/producto/';
 
 
 
 // Función para cargar la tabla de menú
 async function cargarMenu() {
     try {
-        const response = await fetch('https://cafeteria-s0ks.onrender.com:3000/Coffee/menu/');
+        const response = await fetch('https://cafeteria-s0ks.onrender.com/Coffee/menu/');
         const productos = await response.json();
 
         const tbody = document.getElementById('menu-table').querySelector('tbody');
@@ -88,7 +88,7 @@ async function guardarEdicion(event) {
 
     try {
         // Hacer la solicitud PUT al backend
-        const response = await fetch(`https://cafeteria-s0ks.onrender.com:3000/Coffee/producto/${idProducto}`, {
+        const response = await fetch(`https://cafeteria-s0ks.onrender.com/Coffee/producto/${idProducto}`, {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(datosActualizados)
@@ -305,7 +305,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             // Enviar los datos al servidor mediante fetch
-            const response = await fetch('https://cafeteria-s0ks.onrender.com:3000/Coffee/producto/', {
+            const response = await fetch('https://cafeteria-s0ks.onrender.com/Coffee/producto/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
