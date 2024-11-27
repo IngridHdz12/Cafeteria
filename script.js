@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:3000';
+const API_BASE_URL = 'https://cafeteria-s0ks.onrender.com:3000';
 
 async function cargarMenu() {
     // Lógica para cargar el menú desde la API

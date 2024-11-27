@@ -2,7 +2,7 @@
 let totalGeneral = 0;
 
 // URL base de la API para obtener el menú
-const API_BASE_URL = 'http://localhost:3000/Coffee/menu/';
+const API_BASE_URL = 'https://cafeteria-s0ks.onrender.com:3000/Coffee/menu/';
 
 // Función para manejar la compra
 document.getElementById('realizarCompraBtn').addEventListener('click', function(event) {
@@ -59,7 +59,7 @@ document.getElementById('realizarCompraBtn').addEventListener('click', function(
    
 
     // Enviar datos al servidor (POST request)
-    fetch('http://localhost:3000/Coffee/pedido/', {
+    fetch('https://cafeteria-s0ks.onrender.com:3000/Coffee/pedido/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
